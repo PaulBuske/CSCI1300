@@ -1,0 +1,50 @@
+build/
+out/
+node_modules/
+src/main/resources/static
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+### Git Hooks ###
+temp_commit_file.txt
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+.run
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+
+### VS Code ###
+.vscode/
+
+#### MACOS ###
+.DS_Store
+
+#### Yarn ####
+yarn*.log
+
+#### Database files ####
+.java-version
+/postgres-data/
+
+### Journey test output ###
+/journey/cypress/screenshots
+/journey/cypress/videos
