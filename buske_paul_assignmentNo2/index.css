@@ -11,7 +11,7 @@ body{
 
 header{
     min-height: 25vh;
-    min-width: 100vw;
+    min-width: 100%;
 }
 
 hr{
@@ -27,16 +27,13 @@ table, th, td{
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
+    text-align: center;
 }
 
-.td-images{
+img{
     display: block;
     width: 100%;
     height: 100%;
-}
-img{
-    object-fit: cover;
-    display: block;
 }
 
 
