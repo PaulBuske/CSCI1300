@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 50%;
+    background-image: linear-gradient(to right , blue, white, red);
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    min-height: 25vh;
+    min-width: 100vw;
+}
+
+hr{
+    margin: 2px;
+}
+.table-container{
+    width: 90%;
+    margin: 25px;
+}
+table, th, td{
+    font-size: x-large;
+    border: black solid 2px;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.td-images{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+img{
+    object-fit: cover;
+    display: block;
+}
+
+
+footer{
+    bottom: 0;
+    width: 100%;
+    height: 3em;
+}
+
+
