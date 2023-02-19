@@ -1,0 +1,21 @@
+body{
+    background-color: seashell;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 960px;
+    justify-content: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.paul_header_with_image{
+    background-image: url("images/buske_logo.jpeg");
+    width: 960px;
+    height: 250px;
+}
+.paul_header_text{
+    background: rosybrown;
+    text-shadow: 2px 2px gray;
+}
+hr{margin: 1px}
