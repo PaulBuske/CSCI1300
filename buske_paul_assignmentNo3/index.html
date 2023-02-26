@@ -9,7 +9,7 @@
 <!--
 Paul Buske
 CSCI 1600-W1
-Last Updated 18Feb2023
+Last Updated 26Feb2023
 -->
 <!--
 Image for the logo background taken from:
@@ -22,31 +22,50 @@ https://unsplash.com/photos/HwpOAJfN8mM
 <main>
 	<form>
 		<label for="journal_location">Where does this story take
-		                              place?</label><br>
-		<input id="journal_location" name="journal_location" type="text"><br>
-		<label for="journal_main_topic">Tell us about your story?</label><br>
-		<textarea cols="50" id="journal_main_topic" name="journal_main_topic"
-		          rows="4">So there I was...</textarea><br>
-		How did this make you feel?<br>
+		                              place?<br>
+			<input id="journal_location" name="journal_act_location"
+			       type="text">
+		</label><br>
+		<label for="journal_main_topic">Tell us about your story?<br>
+			<textarea cols="50" id="journal_main_topic"
+			          name="journal_main_topic"
+			          rows="4">So there I was...</textarea><br>
+		</label>
+<fieldset>
+	<legend>How did this make you feel?<br>
+	</legend>
+	<label for="glad">&#128512;
 		<input id="glad" name="glad" type="checkbox" value="Glad">
-		<label for="glad">&#128512;</label>&nbsp;
+	</label>&nbsp;
+	<label for="sad">&#128546;
 		<input id="sad" name="sad" type="checkbox" value="Sad">
-		<label for="sad">&#128546;</label>&nbsp;
+	</label>&nbsp;
+	<label for="meh">&#128528;
 		<input id="meh" name="meh" type="checkbox" value="Meh">
-		<label for="meh">&#128528;</label>&nbsp;
+	</label>&nbsp;
+	<label for="angry">&#128544;
 		<input id="angry" name="angry" type="checkbox" value="Angry">
-		<label for="angry">&#128544;</label>&nbsp;<br>
-		What time did this take place?<br>
-		<input id="daytime" name="daytime" type="radio" value="Daytime">
-		<label for="daytime">Day Time</label>&nbsp;
-		<input id="nighttime" name="nighttime" type="radio" value="Nighttime">
-		<label for="nighttime">Night Time</label><br>
-		<label for="experience">Rate your experience from 1 to 10:</label>
-		<input id="experience" max="10" min="1" name="experience"
-		       type="range"> <br><br>
+	</label>&nbsp;<br>
+</fieldset>
+		<fieldset>
+			<legend>
+				What time did this take place?<br>
+			</legend>
+			<label for="daytime">Day Time
+				<input id="daytime" name="daytime" type="radio" value="Daytime">
+			</label>&nbsp;
+			<label for="nighttime">Night Time
+				<input id="nighttime" name="nighttime" type="radio"
+				       value="Nighttime">
+			</label><br>
+		</fieldset>
+		<label for="experience">Rate your experience from 1 to 10:
+			<input id="experience" max="10" min="1" name="experience"
+			       type="range"> <br><br>
+		</label>
 		<input type="submit" value="Add this event!">
 	</form>
-
+	<br>
 </main>
 <hr>
 <footer>Copyright<em>&copy; 2023</em> Paul Buske</footer>

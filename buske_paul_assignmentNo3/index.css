@@ -17,5 +17,9 @@ body{
 .paul_header_text{
     background: rosybrown;
     text-shadow: 2px 2px gray;
+    text-align: center;
 }
 hr{margin: 1px}
+fieldset{
+    width: max-content;
+}
