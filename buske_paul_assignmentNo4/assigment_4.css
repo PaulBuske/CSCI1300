@@ -1,0 +1,46 @@
+.paul_header{
+    background-image: url("images/buske_logo.jpeg");
+    width: 65vw;
+    height: 250px;
+    display: flex;
+    color: goldenrod;
+    flex-direction: row;
+    border: goldenrod 5px solid;
+    border-radius: 45px;
+}
+.paul_header_text {
+    background: #D2D1CD;
+    text-shadow: 2px 2px gray;
+    text-align: center;
+    padding: .5em;
+    margin: auto;
+    border: goldenrod 2px solid;
+    border-radius: 45px;
+}
+hr{
+    margin: 0 auto;
+    border: 2px #B87333 solid;
+    border-radius: 45px;
+    width: 65vw;
+
+}
+body{
+    background-color: #D2D1CD;
+    width: 60vw;
+    margin: auto;
+}
+main{
+    width: 65vw;
+    float: left;
+    border: goldenrod 5px solid;
+    border-radius: 15px;
+}
+aside{
+    width: 30%;
+    float: right;
+    border: #B87333 3px solid;
+    padding: .5em;
+}
+footer{
+    clear: both;
+}
