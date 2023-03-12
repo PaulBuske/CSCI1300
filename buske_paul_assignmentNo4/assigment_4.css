@@ -12,8 +12,9 @@
     border-radius: 45px;
 }
 .paul_header_text {
-    background: #D2D1CD;
+    background: gray;
     text-shadow: 2px 2px gray;
+    width: max-content;
     text-align: center;
     padding: .5em;
     margin: auto;
@@ -31,15 +32,27 @@ body{
     background-color: #D2D1CD;
     width: 60vw;
     margin: auto;
+    font-family: "Century Gothic", serif;
 }
 main{
     width: 65vw;
     float: left;
     border: goldenrod 5px solid;
     border-radius: 15px;
+    background: gray;
+    color: silver;
+}
+img{
+    max-width: 62vw;
+    width: 800px;
+    padding: 3px;
+    border: 1px #B87333 solid;
+    border-radius: 45px;
+    margin: auto;
+    display: block;
 }
 aside{
-    width: 30%;
+    width: 30vw;
     float: right;
     border: #B87333 3px solid;
     padding: .5em;
