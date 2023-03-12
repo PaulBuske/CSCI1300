@@ -1,5 +1,8 @@
 .paul_header{
-    background-image: url("images/buske_logo.jpeg");
+    background-image: url("images/new_york_logo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 65vw;
     height: 250px;
     display: flex;
