@@ -55,8 +55,13 @@ aside{
     width: 30vw;
     float: right;
     border: #B87333 3px solid;
-    padding: .5em;
+    padding: .5em 0;
+    margin: auto;
 }
 footer{
     clear: both;
+}
+
+p{
+    padding: 0 3em;
 }
