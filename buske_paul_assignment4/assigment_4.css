@@ -1,0 +1,67 @@
+.paul_header{
+    background-image: url("images/new_york_logo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 65vw;
+    height: 250px;
+    display: flex;
+    color: goldenrod;
+    flex-direction: row;
+    border: goldenrod 5px solid;
+    border-radius: 45px;
+}
+.paul_header_text {
+    background: gray;
+    text-shadow: 2px 2px gray;
+    width: max-content;
+    text-align: center;
+    padding: .5em;
+    margin: auto;
+    border: goldenrod 2px solid;
+    border-radius: 45px;
+}
+hr{
+    margin: 0 auto;
+    border: 2px #B87333 solid;
+    border-radius: 45px;
+    width: 65vw;
+
+}
+body{
+    background-color: #D2D1CD;
+    width: 60vw;
+    margin: auto;
+    font-family: "Century Gothic", serif;
+}
+main{
+    width: 65vw;
+    float: left;
+    border: goldenrod 5px solid;
+    border-radius: 15px;
+    background: gray;
+    color: silver;
+}
+img{
+    max-width: 62vw;
+    width: 800px;
+    padding: 3px;
+    border: 1px #B87333 solid;
+    border-radius: 45px;
+    margin: auto;
+    display: block;
+}
+aside{
+    width: 30vw;
+    float: right;
+    border: #B87333 3px solid;
+    padding: .5em 0;
+    margin: auto;
+}
+footer{
+    clear: both;
+}
+
+p{
+    padding: 0 3em;
+}

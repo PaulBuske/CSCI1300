@@ -1,0 +1,39 @@
+body{
+    justify-content: center;
+    align-content: center;
+    background-color: palegoldenrod;
+    margin: auto;
+    width: 50%;
+}
+
+img{height: 300px;
+        width: 300px;
+       border: aqua;
+}
+
+.pageTitle{
+    justify-self: center;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.centerImages{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+    max-height: 300px;
+    max-width: 300px;
+}
+.navBar{
+    display: flex;
+    gap: 20px;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+
+}
+a{text-decoration: none;
+text-decoration-color: blue}
