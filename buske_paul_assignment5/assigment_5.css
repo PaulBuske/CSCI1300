@@ -11,3 +11,23 @@ h1, h2{
     width: 100%;
     font-family: "sarubunRegular", monospace;
 }
+.border-box{
+    margin: 5px;
+    border-radius: 20px;
+}
+header{
+    width: 100%;
+    background-color: olive;
+    border: darkslategrey 5px solid;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+nav{display: flex}
+ul{
+    list-style-type: none;
+}
