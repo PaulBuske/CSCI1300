@@ -23,18 +23,18 @@ Last Updated 12Apr2023
 	                                             book information</button>
 	<script>
 		function promptForBookInformation(){
-			const bookTitle = prompt('What is the title of your favorite book?')
+			const bookTitle = prompt("What is the title of your favorite book?")
 			const bookAuthor =
-					prompt('Who is the author of your favorite book?')
+					prompt("Who is the author of your favorite book?")
 			const bookSubject =
-					prompt('What is the subject of your favorite book')
+					prompt("What is the subject of your favorite book")
 
 			if(bookTitle != null && bookAuthor != null && bookSubject != null){
-				document.getElementById('title').innerHTML =
+				document.getElementById("title").innerHTML =
 						`Title: ${bookTitle}`;
-				document.getElementById('author').innerHTML =
+				document.getElementById("author").innerHTML =
 						`Author: ${bookAuthor}`;
-				document.getElementById('subject').innerHTML =
+				document.getElementById("subject").innerHTML =
 						`Subject: ${bookSubject}`;
 			}
 		}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Paul's Age App</title>
+	<link href="assigment_6_q2.css" rel="stylesheet">
+</head>
+<body>
+<!--
+Paul Buske
+CSCI 1600-W1
+Last Updated 12Apr2023
+-->
+<header>
+	<h1>Paul's Age App</h1>
+</header>
+<main>
+	<form name="ageForm" action="javascript:submitUserAge()">
+		<label>
+			Please enter your age:
+			<input type="text" id="usersAge">
+		</label>
+		<input type="submit">
+	</form>
+	<div id="addFive"></div>
+	<div id="timesTwo"></div>
+	<script>
+		const submitUserAge = () => {
+			const age =
+					parseInt(document.getElementById("usersAge").value)
+
+			if (age != null && age >= 0) {
+				const agePlusFive = age + 5;
+				const ageTimesTwo = age * 2;
+				document.getElementById("addFive").innerHTML =
+						`Age plus five: ` + agePlusFive;
+				document.getElementById("timesTwo").innerHTML =
+						`Age times two: ${ageTimesTwo}`;
+			}
+		};
+	</script>
+</main>
+<footer class="border-box">Copyright<em>&copy; 2023</em> Paul Buske</footer>
+</body>
+</html>
