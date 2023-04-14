@@ -9,13 +9,13 @@
 <!--
 Paul Buske
 CSCI 1600-W1
-Last Updated 12Apr2023
+Last Updated 14Apr2023
 -->
 <header >
 	<h1>Paul's Book App</h1>
 </header>
 <main>
-	<h3 class="bookInformation">Book Information:</h3>
+	<h3>Favorite Book Information:</h3>
 	<div id="title">Title: </div>
 	<div id="author">Author:</div>
 	<div id="subject">Subject:</div>
@@ -23,23 +23,23 @@ Last Updated 12Apr2023
 	                                             book information</button>
 	<script>
 		function promptForBookInformation(){
-			const bookTitle = prompt("What is the title of your favorite book?")
-			const bookAuthor =
+			const bookTitleResponse = prompt("What is the title of your favorite book?")
+			const bookAuthorResponse =
 					prompt("Who is the author of your favorite book?")
-			const bookSubject =
+			const bookSubjectResponse =
 					prompt("What is the subject of your favorite book")
 
-			if(bookTitle != null && bookAuthor != null && bookSubject != null){
+			if(bookTitleResponse != null && bookAuthorResponse != null && bookSubjectResponse != null){
 				document.getElementById("title").innerHTML =
-						`Title: ${bookTitle}`;
+						`Title: ${bookTitleResponse}`;
 				document.getElementById("author").innerHTML =
-						`Author: ${bookAuthor}`;
+						`Author: ${bookAuthorResponse}`;
 				document.getElementById("subject").innerHTML =
-						`Subject: ${bookSubject}`;
+						`Subject: ${bookSubjectResponse}`;
 			}
 		}
 	</script>
 </main>
-<footer class="border-box">Copyright<em>&copy; 2023</em> Paul Buske</footer>
+<footer>Copyright<em>&copy; 2023</em> Paul Buske</footer>
 </body>
 </html>

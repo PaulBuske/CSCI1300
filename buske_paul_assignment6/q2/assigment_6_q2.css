@@ -3,6 +3,7 @@ body {
     margin: auto;
     background-color: black;
     color: #33FF00;
+    font-family: monospace;
 }
 main{
     display: flex;
