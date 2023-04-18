@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Paul's Miles to Kilometers Tool</title>
+	<link href="assigment_6_q1.css" rel="stylesheet">
+</head>
+<body>
+<!--
+Paul Buske
+CSCI 1600-W1
+Last Updated 14Apr2023
+-->
+<header>
+	<h1>Paul's Miles to Kilometers Tool</h1>
+</header>
+<main>
+	<form action="javascript:convertMilesToKilometers()" name="ageForm">
+		<label>
+			Please enter miles:
+			<input id="miles" type="text">
+		</label>
+		<input type="submit" value="Convert to Kilometers">
+	</form>
+	<div id="conversion"></div>
+	<script>
+		const convertMilesToKilometers = () => {
+			const miles =
+					parseInt(document.getElementById("miles").value)
+			const kilometers = miles * 1.61;
+			switch (true) {
+				case miles !== null && !isNaN(miles):
+					document.getElementById("conversion").innerHTML =
+							`${ miles } miles is ${ kilometers } kilometers`;
+					break;
+				case isNaN(miles):
+					alert("Please enter a number.");
+					break;
+				default:
+					alert("Something went wrong, please try again.");
+			}
+		};
+	</script>
+</main>
+<footer>Copyright<em>&copy; 2023</em> Paul Buske</footer>
+</body>
+</html>

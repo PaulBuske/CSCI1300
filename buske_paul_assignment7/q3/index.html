@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Paul's Age App</title>
+	<link href="assigment_6_q3.css" rel="stylesheet">
+</head>
+<body>
+<!--
+Paul Buske
+CSCI 1600-W1
+Last Updated 14Apr2023
+-->
+<header>
+	<h1>Paul's Age App</h1>
+</header>
+<main>
+	<form action="javascript:submitUserAge()" name="ageForm">
+		<label>
+			Please enter your age:
+			<input id="usersAge" type="text">
+		</label>
+		<input type="submit">
+	</form>
+	<div id="addFive"></div>
+	<div id="timesTwo"></div>
+	<script>
+		const submitUserAge = () => {
+			const age =
+					parseInt(document.getElementById("usersAge").value)
+			switch (true) {
+				case age >= 0:
+					document.getElementById("addFive").innerHTML =
+							`Age plus five: ${ age + 5 }`;
+					document.getElementById("timesTwo").innerHTML =
+							`Age times two: ${age * 2}`;
+					break;
+				case age < 0:
+					alert("Please enter a positive number.");
+					break;
+				case isNaN(age):
+					alert("Please enter a number.");
+					break;
+				default:
+					alert("Something went wrong, please try again.");
+			}
+		};
+	</script>
+</main>
+<footer>Copyright<em>&copy; 2023</em> Paul Buske</footer>
+</body>
+</html>

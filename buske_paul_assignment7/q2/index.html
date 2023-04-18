@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Paul's Feet to Inches Calculator</title>
+	<link href="assigment_6_q2.css" rel="stylesheet">
+</head>
+<body>
+<!--
+Paul Buske
+CSCI 1600-W1
+Last Updated 14Apr2023
+-->
+<header>
+	<h1>Paul's Feet to Inches Calculator</h1>
+</header>
+<main>
+	<form action="javascript:convertToTotalInches()" name="ageForm">
+		<label>
+			Feet:
+			<input id="feet" type="text">
+		</label>
+		<label>
+			Inches:
+			<input id="inches" type="text">
+		</label>
+		<input type="submit" value="Convert to Inches">
+	</form>
+	<div id="conversion"></div>
+	<script>
+		const convertToTotalInches = () => {
+
+			const feet =
+					parseInt(document.getElementById("feet").value);
+			if ()
+			const inches =
+					parseInt(document.getElementById("inches").value);
+
+			switch (true) {
+				case feet < 0 && inches < 0 :
+					alert("Feet and inches must be more than 0.");
+					break
+				case inches > 11 || inches < 0 :
+					alert("Inches must be between 0 and 11.");
+					break
+				case feet < 0 :
+					alert("Feet must be more than 0.");
+					break
+				case isNaN((feet) || isNaN(inches)) && (feet !== null ||
+						inches !== null):
+					alert("Please enter a number.");
+					break;
+				case !isNaN(feet) && inches === null :
+					const totalInchesWhenInchesAreNull = feet * 12;
+					document.getElementById("conversion").innerHTML =
+							`${ totalInchesWhenInchesAreNull} inches.`;
+					break;
+				case feet === null && !isNaN(inches) :
+					document.getElementById("conversion").innerHTML =
+							`${ inches } inches.`;
+					break;
+				case !isNaN(feet) && !isNaN(inches) :
+					const totalInches = feet *12 + inches;
+					document.getElementById("conversion").innerHTML =
+							`${ totalInches } inches.`;
+					break;
+				default:
+					alert("Something went wrong, please try again.");
+			}
+		};
+	</script>
+</main>
+<footer>Copyright<em>&copy; 2023</em> Paul Buske</footer>
+</body>
+</html>

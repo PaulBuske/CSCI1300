@@ -1,0 +1,38 @@
+body {
+    width: 100vw;
+    margin: auto;
+    background-color: black;
+    color: #33FF00;
+    font-family: monospace;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+header {
+    width: 100%;
+    background-color: black;
+    color: #FFB000;
+    border: darkslategrey 5px solid;
+    text-align: center;
+}
+button{
+    width: max-content;
+    margin: .5rem;
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+    color: #FFB000;
+    border: darkslategrey 5px solid;
+    padding: 3px;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
