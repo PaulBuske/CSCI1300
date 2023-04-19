@@ -9,7 +9,7 @@
 <!--
 Paul Buske
 CSCI 1600-W1
-Last Updated 14Apr2023
+Last Updated 19Apr2023
 -->
 <header>
 	<h1>Paul's Miles to Kilometers Tool</h1>
@@ -26,7 +26,7 @@ Last Updated 14Apr2023
 	<script>
 		const convertMilesToKilometers = () => {
 			const miles =
-					parseInt(document.getElementById("miles").value)
+					parseFloat(document.getElementById("miles").value)
 			const kilometers = miles * 1.61;
 			switch (true) {
 				case miles !== null && !isNaN(miles):
@@ -34,10 +34,12 @@ Last Updated 14Apr2023
 							`${ miles } miles is ${ kilometers } kilometers`;
 					break;
 				case isNaN(miles):
-					alert("Please enter a number.");
+					document.getElementById("conversion").innerHTML =
+							"Please enter a number.";
 					break;
 				default:
-					alert("Something went wrong, please try again.");
+					document.getElementById("conversion").innerHTML =
+							"Something went wrong, please try again."
 			}
 		};
 	</script>

@@ -9,7 +9,7 @@
 <!--
 Paul Buske
 CSCI 1600-W1
-Last Updated 14Apr2023
+Last Updated 19Apr2023
 -->
 <header>
 	<h1>Paul's Feet to Inches Calculator</h1>
@@ -33,35 +33,42 @@ Last Updated 14Apr2023
 			const feetAsString = document.getElementById("feet").value;
 			const inchesAsString = document.getElementById("inches").value;
 
-			const feetAsInt =  feetAsString === "" ? 0 : parseInt(feetAsString);
-			const inchesAsInt = inchesAsString === "" ? 0 : parseInt(inchesAsString);
+			const feetAsFloat =  feetAsString === "" ? 0 : parseFloat(feetAsString);
+			const inchesAsFloat = inchesAsString === "" ? 0 : parseFloat(inchesAsString);
+
 
 			switch (true) {
-				case feetAsInt < 0 && inchesAsInt < 0 :
+				case feetAsFloat < 0 && inchesAsFloat < 0 :
 					document.getElementById("conversion").innerHTML =
 							"Feet must be more than 0. Inches must be between 0 and 11.";
 					break
-				case inchesAsInt > 11 || inchesAsInt < 0 :
+				case inchesAsFloat > 11 || inchesAsFloat < 0 :
 					document.getElementById("conversion").innerHTML =
 							"Inches must be between 0 and 11.";
 					break
-				case feetAsInt < 0 :
+				case feetAsFloat < 0 :
 					document.getElementById("conversion").innerHTML =
 							"Feet must be more than 0.";
+					break
+				case feetAsFloat % 1 !== 0 :
+					document.getElementById("conversion").innerHTML =
+							"Feet must be a whole number";
 					break
 				case feetAsString === "" && inchesAsString === "" :
 					document.getElementById("conversion").innerHTML =
 							"Please enter a value to continue.";
 					break;
-				case (isNaN(feetAsInt) || isNaN(inchesAsInt)) && (feetAsInt !== null ||
-						inchesAsInt !== null):
+				case (isNaN(feetAsFloat) || isNaN(inchesAsFloat)) && (feetAsFloat !== null ||
+						inchesAsFloat !== null):
 					document.getElementById("conversion").innerHTML =
 							"Please enter a number.";
 					break;
-				case !isNaN(feetAsInt) && !isNaN(inchesAsInt) :
-					const totalInches = feetAsInt *12 + inchesAsInt;
+				case !isNaN(feetAsFloat) && !isNaN(inchesAsFloat) :
+					const totalInches = feetAsFloat * 12 + inchesAsFloat;
+					const displayedInches = totalInches % 1 ?
+							totalInches : Number(totalInches).toFixed(0);
 					document.getElementById("conversion").innerHTML =
-							`${ totalInches } inches.`;
+							`${ displayedInches } inches.`;
 					break;
 				default:
 					document.getElementById("conversion").innerHTML =
